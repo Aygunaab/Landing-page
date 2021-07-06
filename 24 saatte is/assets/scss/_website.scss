@@ -1,0 +1,212 @@
+body {
+	margin: 0;
+	font-family: $font-family;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #c6cad4;
+	text-align: left;
+	background-color: $white-color;
+}
+.list-reset{
+    padding-left: 0;
+    list-style: none;
+}
+.lign-height-25{
+    line-height: 25px !important;
+}
+.border-bottom{
+    border-bottom: 3px solid $primary-color !important;
+    width: 20px !important;
+    margin: auto;
+}
+//font size style
+.font-size-11 {
+	font-size: 11px !important;
+}
+.font-size-13 {
+	font-size: 13px !important;
+}
+.font-size-14 {
+	font-size: 14px !important;
+}
+.font-size-15 {
+	font-size: 15px !important;
+}
+.font-size-18{
+	font-size: 18px !important;
+}
+.font-size-45 {
+	font-size: 45px !important;
+}
+
+//color
+.color-dgray {
+	color: darkgrey !important;
+}
+//buton style
+.btn {
+	display: inline-block;
+	font-family: $font-family;
+	font-weight: 700;
+	color: #c6cad4;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	background-color: transparent;
+	border: 1.5px solid transparent;
+	padding: .65rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 30px;
+}
+.btn-danger {
+	color: $white-color;
+	background-color: #d5011d;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .8);
+}
+.btn-dark {
+	color: $white-color;
+	background-color: #000 !important;
+	border-color: #000 !important;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(12, 2, 2, .8);
+}
+.btn-light {
+	color: #212529;
+	background-color: #c6cad4 !important;
+	border-color: #c6cad4 !important;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(12, 2, 2, .8);
+}
+.shadow-lg {
+	box-shadow: 0 0 30px rgba(213, 1, 29, .27) !important;
+}
+.title-style {
+	font-weight: 900;
+	color: $primary-color;
+	text-transform: capitalize;
+}
+.font-weight-5{
+font-weight: 500;
+}
+.font-weight-7{
+    font-weight: 700;
+    }
+.text-lg-left{
+    @media (min-width: 992px){
+        text-align: left!important;
+    }
+}
+//banner section
+.banner {
+	background: url(../img/hero-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 630px;
+	margin-top: 75px;
+	p {
+		line-height: 25px;
+	}
+
+	.btn-dark {
+		border-radius: 12px !important;
+	}
+}
+//introduction section
+.introduction {
+	.content-block {
+		.content {
+			position: relative;
+			max-height: 400px;
+			overflow-y: hidden;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(
+					to bottom,
+					transparent,
+					transparent,
+					transparent,
+					transparent,
+					transparent,
+					rgba(255, 255, 255, .6),
+					rgba(255, 255, 255, .9),
+					#fff,
+					#fff,
+					#fff,
+					#fff
+				);
+			}
+		}
+		.intro {
+			transition: .7s;
+			max-height: auto;
+		}
+		.read-more {
+			position: relative;
+			margin-top: -240px;
+			z-index: 9;
+		}
+	}
+}
+//points section
+.points {
+	.img-block {
+		img {
+			@media (min-width: 1200px) {
+				margin-top: -125px;
+				width: 110% !important;
+			}
+		}
+	}
+}
+//mission section
+.mission{
+    background: url(../img/mission.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+//team section
+.team{
+    .mision-card{
+        cursor: pointer;
+        &:hover{
+            img{
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+            .head-style{
+                color: $secondary-color;
+            }
+            .subtitle-style{
+                color: $primary-color;
+            }
+        }
+        img{
+            width: 110px;
+    filter: grayscale(100%);
+        }
+    }
+    .team-card-titleÖ{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+}
+//press section
+.press{
+    .carousel-control-prev {
+        width: auto;
+        justify-content: flex-start;
+        @media (min-width: 576px){
+            left: -3%!important;
+        }
+    }
+}

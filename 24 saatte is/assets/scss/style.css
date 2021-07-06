@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #c6cad4;
+  text-align: left;
+  background-color: #fff;
+}
+
+.list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+.lign-height-25 {
+  line-height: 25px !important;
+}
+
+.border-bottom {
+  border-bottom: 3px solid #425071 !important;
+  width: 20px !important;
+  margin: auto;
+}
+
+.font-size-11 {
+  font-size: 11px !important;
+}
+
+.font-size-13 {
+  font-size: 13px !important;
+}
+
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-15 {
+  font-size: 15px !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.font-size-45 {
+  font-size: 45px !important;
+}
+
+.color-dgray {
+  color: darkgrey !important;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #c6cad4;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  padding: .65rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 30px;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #d5011d;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #000 !important;
+  border-color: #000 !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(12, 2, 2, 0.8);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(12, 2, 2, 0.8);
+}
+
+.btn-light {
+  color: #212529;
+  background-color: #c6cad4 !important;
+  border-color: #c6cad4 !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(12, 2, 2, 0.8);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(12, 2, 2, 0.8);
+}
+
+.shadow-lg {
+  -webkit-box-shadow: 0 0 30px rgba(213, 1, 29, 0.27) !important;
+          box-shadow: 0 0 30px rgba(213, 1, 29, 0.27) !important;
+}
+
+.title-style {
+  font-weight: 900;
+  color: #425071;
+  text-transform: capitalize;
+}
+
+.font-weight-5 {
+  font-weight: 500;
+}
+
+.font-weight-7 {
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+}
+
+.banner {
+  background: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 630px;
+  margin-top: 75px;
+}
+
+.banner p {
+  line-height: 25px;
+}
+
+.banner .btn-dark {
+  border-radius: 12px !important;
+}
+
+.introduction .content-block .content {
+  position: relative;
+  max-height: 400px;
+  overflow-y: hidden;
+}
+
+.introduction .content-block .content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(rgba(255, 255, 255, 0.6)), color-stop(rgba(255, 255, 255, 0.9)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(to bottom, transparent, transparent, transparent, transparent, transparent, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9), #fff, #fff, #fff, #fff);
+}
+
+.introduction .content-block .intro {
+  -webkit-transition: .7s;
+  transition: .7s;
+  max-height: auto;
+}
+
+.introduction .content-block .read-more {
+  position: relative;
+  margin-top: -240px;
+  z-index: 9;
+}
+
+@media (min-width: 1200px) {
+  .points .img-block img {
+    margin-top: -125px;
+    width: 110% !important;
+  }
+}
+
+.mission {
+  background: url(../img/mission.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team .mision-card {
+  cursor: pointer;
+}
+
+.team .mision-card:hover img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.team .mision-card:hover .head-style {
+  color: #D5011D;
+}
+
+.team .mision-card:hover .subtitle-style {
+  color: #425071;
+}
+
+.team .mision-card img {
+  width: 110px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.team .team-card-titleÖ {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.press .carousel-control-prev {
+  width: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (min-width: 576px) {
+  .press .carousel-control-prev {
+    left: -3% !important;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #677596 !important;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
