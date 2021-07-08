@@ -27,6 +27,9 @@ a {
 	width: 20px !important;
 	margin: auto;
 }
+.border-vacancy-bottom{
+	border-bottom: 1.5px solid#F6F9FF!important;
+}
 .border-radius-25 {
 	border-radius: 25px !important;
 }
@@ -75,6 +78,9 @@ a {
 }
 .color-secondary{
 	color: $secondary-color !important;
+}
+.green-color{
+	color: #49cc90 !important;
 }
 .bg-footer {
 	background-color: $primary-color;
@@ -429,6 +435,13 @@ a {
 	height: 74px;
 	width: 100px;
 }
+footer{
+	.socials{
+		@media only screen and(max-width: 992px){
+			justify-content: center;
+		}
+	}
+}
 
 #company_contact {
 	.modal-content {
@@ -571,6 +584,10 @@ a {
 	margin-right: 0;
     margin-left: 0;
 }
+.reset-margin-tb{
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .reset-padding{
 	padding-right: 0;
 	padding-left: 0;
@@ -596,4 +613,33 @@ a {
 .hr-size{
 	margin-top: 2px !important;
     margin-bottom: 2px !important;
+}
+.job-description{
+	font-size: 15px;
+    color:$primary-color;
+	
+}
+.max-witdh{
+	max-width: 100%;
+}
+.table-vacancy{
+	display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+	table{
+	
+		td{
+			@media only screen and(max-width: 992px){
+				&:nth-child(2){
+					display: none;
+				}
+				&:nth-child(3){
+					display: none;
+				}
+			
+			}
+			padding-bottom: 20px;
+		}
+	}
 }

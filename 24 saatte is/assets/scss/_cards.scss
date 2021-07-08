@@ -67,9 +67,9 @@
 //post card
 .post-card {
 	display: flex;
-    @media only screen and(max-width: 992px) {
-        display: block;
-    }
+	@media only screen and(max-width: 992px) {
+		display: block;
+	}
 
 	&:not(:last-of-type) {
 		padding-bottom: 1.5rem;
@@ -83,15 +83,15 @@
 		flex-shrink: 0;
 		flex-grow: 0;
 		max-height: 160px;
-        @media only screen and(max-width: 992px){
-            max-height: 300px;
-        }
+		@media only screen and(max-width: 992px) {
+			max-height: 300px;
+		}
 	}
 	.post-card-content-block {
 		margin-left: 20px;
-        @media only screen and(max-width: 992px){
-            margin-top: 20px;
-        }
+		@media only screen and(max-width: 992px) {
+			margin-top: 20px;
+		}
 		.post-card-data {
 			font-size: 13px;
 			color: $title-color;
@@ -137,5 +137,74 @@
 			min-width: 50px;
 			text-align: center;
 		}
+	}
+}
+
+//job details card
+.job-card-list {
+	overflow-y: scroll;
+	height: 94vh;
+	@media only screen and(max-width: 992px) {
+		overflow-y: scroll;
+		height: 82vh;
+	}
+}
+.job-details-card {
+	position: relative;
+	display: block;
+	padding: 12px 20px;
+	background-color: $white-color;
+	border: 1.5px solid rgba(0, 0, 0, .125);
+	width: 100%;
+	color: #495057;
+	text-align: inherit;
+	flex-direction: column;
+	align-items: flex-start;
+	&:first-of-type {
+		border-top-left-radius: inherit;
+		border-top-right-radius: inherit;
+	}
+	.job-data {
+		text-align: right;
+		font-weight: 500;
+	}
+}
+
+//jobdetails
+.job-list {
+	list-style: none;
+	.job-details {
+		text-align: center;
+		&:first-of-type {
+			font-size: 18px;
+			@media only screen and(max-width: 992px) {
+				font-size: 10px;
+			}
+		}
+		&:last-of-type {
+			@media only screen and(max-width: 992px) {
+				font-size: 11px;
+			}
+		}
+	}
+}
+.job-opportunities {
+	@media only screen and(max-width: 778px) {
+		text-align: center;
+	}
+}
+
+.job-description-block {
+	list-style: none;
+	margin-top: 30px;
+	@media only screen and(max-width: 992px) {
+		text-align: center;
+	}
+
+	.list-item {
+		display: inline-block;
+		border: 1px solid #c6cad4;
+		padding: 10px 40px 10px 20px;
+		border-radius: 20px;
 	}
 }
