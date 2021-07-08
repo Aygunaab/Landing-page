@@ -16,7 +16,7 @@
   <header class="fixed-top bg-white ">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light py-3">
-        <a class="navbar-brand" href="#"><img class="logo" style="max-width: 110px;" src="/assets/img/logo.png"
+        <a class="navbar-brand" href="index.html"><img class="logo" style="max-width: 110px;" src="/assets/img/logo.png"
             alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
           <ul class="navbar-nav font-size-13  me-auto my-2 my-lg-0 navbar-nav-scroll"
             style="--bs-scroll-height: 100px;">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Neden Biz</a>
+              <a class="nav-link " aria-current="page" href="#points">Neden Biz</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
@@ -34,18 +34,28 @@
                 Hakkımızda
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Biz Kimiz?</a></li>
-                <li><a class="dropdown-item" href="#">Misyonumuz</a></li>
-                <li><a class="dropdown-item" href="#">Ekibimiz</a></li>
-                <li><a class="dropdown-item" href="#">Basında Biz</a></li>
-                <li><a class="dropdown-item" href="#">Rakamlarla Biz</a></li>
+                <li><a class="dropdown-item" href="#introduction">Biz Kimiz?</a></li>
+                <li><a class="dropdown-item" href="#mission">Misyonumuz</a></li>
+                <li><a class="dropdown-item" href="#team">Ekibimiz</a></li>
+                <li><a class="dropdown-item" href="#press">Basında Biz</a></li>
+                <li><a class="dropdown-item" href="#numbers">Rakamlarla Biz</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Referanslarımız</a>
+              <a class="nav-link" href="#referances">Referanslarımız</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="blog.html" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Sehifeler
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="blog.html">Blog </a></li>
+                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                <li><a class="dropdown-item" href="jobsearch.html">Ilan Ara</a></li>
+                <li><a class="dropdown-item" href="jobsearch-details.html">Ilanlar</a></li>
+                <li><a class="dropdown-item" href="job-details.html">Ilan detalları</a></li>
+              </ul>
             </li>
           </ul>
           <ul class="navbar-nav font-size-13  justify-content-end">
@@ -53,12 +63,13 @@
               <a class="nav-link " aria-current="page" href="#">Bize Ulaşın</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">İlan Ara</a>
+              <a class="nav-link" href="jobsearch.html">İlan Ara</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Şirket Girişi/Kayıt</a>
             </li>
-            <a href="#" class="btn btn-danger font-size-13 ps-4 ms-4 shadow-lg "><span class="px-2">Demo Talep
+            <a href="#" class="btn btn-danger font-size-13 ps-4 ms-4 shadow-lg " data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><span class="px-2">Demo Talep
                 Et</span></a>
           </ul>
         </div>
@@ -76,8 +87,8 @@
               bulmak
               uzun sürüyor ve zor oluyorsa, çözüm 24 Saatte İş’te! Yeni elemanını bulmak artık kolay, pratik ve hızlı!
             </p>
-            <a href="#" class="btn btn-danger font-size-14 px-5 m-2 shadow-lg " data-toggle="modal"
-              data-target="#Modal"><span class="px-2">Hemen Keşfet</span></a>
+            <a href="#" class="btn btn-danger font-size-14 px-5 m-2 shadow-lg " data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><span class="px-2">Hemen Keşfet</span></a>
             <div class="my-4">
               <a href="https://apps.apple.com/tr/app/24-saatte-i-%C5%9F/id1265425558"
                 class="btn btn-dark font-size-13 px-2 pe-4 py-2 m-2 d-sm-inline">
@@ -99,7 +110,7 @@
         </div>
       </div>
     </section>
-    <section class="introduction pt-5">
+    <section id="introduction" class="introduction pt-5">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 p-0 col-12 pe-xl-5 d-md-block d-none">
@@ -132,7 +143,7 @@
       </div>
 
     </section>
-    <section class="points bg-light">
+    <section id="points" class="points bg-light">
       <div class="container-fluid">
         <div class="row d-flex flex-md-row-reverse">
           <div
@@ -160,7 +171,7 @@
       </div>
 
     </section>
-    <section class="mission py-5">
+    <section id="mission" class="mission py-5">
       <div class="container my-4">
         <div class="row  justify-content-center align-items-center text-center text-lg-left">
           <div class="col-lg-5 ps-lg-4">
@@ -180,7 +191,7 @@
         </div>
       </div>
     </section>
-    <section class="team py-5 title-style">
+    <section id="team" class="team py-5 title-style">
       <div class="container py-xl-4">
         <div class="row">
           <div class="col-12 text-center font-size-15">
@@ -292,7 +303,7 @@
         </div>
       </div>
     </section>
-    <section class="press bg-light py-5">
+    <section id="press" class="press bg-light py-5">
       <div class="container py-3 py-xl-4">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center font-size-15 my-3 title-style">
@@ -692,7 +703,7 @@
         </div>
       </div>
     </section>
-    <section class="numbers py-5  text-center">
+    <section id="numbers" class="numbers py-5  text-center">
       <div class="container py-xl-3">
         <div class="row">
           <div class="col-12 title-style font-size-15 my-3">
@@ -749,7 +760,7 @@
       </div>
 
     </section>
-    <section class="referances mb-5">
+    <section id="referances" class="referances mb-5">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 title-style font-size-15 my-3">
@@ -764,7 +775,7 @@
         </div>
       </div>
     </section>
-    <section class="companies pt-5 pb-4 textt-md-left text-center">
+    <section id="companies" class="companies pt-5 pb-4 text-md-left text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 text-center font-size-15 my-3 title-style">
@@ -837,7 +848,122 @@
         </div>
       </div>
     </section>
+    <section id="comments" class="comments py-2">
+      <div class="container">
+        <div class="row color-primary justify-content-center">
+          <div class="col-lg-12 p-md-auto p-0 text-center font-size-15 my-3 title-style">
+            <h5 class="mb-0 font-weight-7 ">Kullanıcı Yorumları</h5>
+            <div class="border-bottom my-1 mx-auto"></div>
+          </div>
+          <div class="col-10 p-md-auto p-0 my-3">
+            <img src="/assets/img/comments.jpg" class="img-fluid" alt="img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 py-xl-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center color-primary">
+            <h2 class="font-size-45 font-weight-9">Bugün indir telefonuna, <br> yarın kavuş elemanına!</h2>
+            <a href="#" class="btn btn-danger px-5 font-size-20 shadow-lg my-4" data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><span class="px-4 mx-3">Hemen Keşfet</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="cookie-block" class="fixed-bottom">
+      <p>Kullanım ve tercihleri izlemek için çerezler kullanıyoruz.
+        <button class="btn btn-style-two  cookie-btn-enable ">Kabul et</button>
+        <a href="#" class="btn  btn-style-two cookie-btn-policy">Gizlilik Politikası</a>
+      </p>
+    </div>
   </main>
+  <footer class="bg-footer contact text-white py-3">
+    <div class="container">
+      <div class="row justify-content-center font-size-13 text-lg-left text-center">
+        <div class="col-lg-3 col-sm-6 col-12 p-lg-0 my-3">
+          <ul class="list-reset">
+            <li class="py-2">İletişim</li>
+            <li class="py-2">Adres: Levazım, Korukent Sitesi, Koru</li>
+            <li class="py-2">Sokak No:30 Daire:5, 34340</li>
+            <li class="py-2">Beşiktaş/Istanbul</li>
+            <li class="py-2">Telefon:<a class="text-white" href="tel:0850-840-57-48">0850 840 57 48</a></li>
+          </ul>
+          <ul class="socials list-reset font-size-18 my-4">
+            <li class="socials-item"><a href="#"><i class="fab fa-facebook-square text-white"></i></a></li>
+            <li class="socials-item"><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
+            <li class="socials-item"><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-13 p-lg-0 my-3">
+          <ul class="list-reset">
+            <li class="py-2"><a href="#" class="text-white" target="_blank">Hakkımızda</a></li>
+            <li class="py-2"><a href="#" class="text-white" target="_blank">Gizlilik Politikası</a></li>
+            <li class="py-2"><a href="#" class="text-white" target="_blank">Yasal Uyarılar</a></li>
+            <li class="py-2"><a href="#" class="text-white" target="_blank">Çerez Engelleme Politikası</a></li>
+            <li class="py-2"><a href="#" class="text-white" target="_blank">Hizmet Sözleşmesi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-12 my-3 mb-lg-0">
+          <div class="row" img src="/assets/img/footer-img.png" alt="img" class="footer-img pe-4">
+            <p>İskur lisansımızı görmek icin </p> <a href="#"></a>
+          </div>
+          <p class="mb-2 mt-3 footer-content">Karma Mobil Teknoloji Bilişim Sistemleri ve
+            Danışmanlık A.Ş.; Türkiye İş Kurumu’nun 03.11.2020 tarih ve 939 numaralı izin belgesi ile
+            faaliyet göstermektedir. 7058039 sayılı karar uyarınca belge verilmiştir. 4904 sayılı kanun
+            uyarınca iş arayanlardan ücret alınması yasaktır. Şikayetleriniz için, İstanbul İŞKUR İl
+            Müdürlüğü Beyoğlu Hizmet Merkezine başvurabilirsiniz. İşkur tel: 0(212) 243 76 12-13 Adres:
+            Gümüşsuyu Mah. Selime Hatun Camii sokak Abisa iş merkezi C blok No:3
+            Fındıklı-Beyoğlu/İstanbul</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog text-center h-100 mx-auto my-0 d-flex flex-column justify-content-center">
+      <div class="modal-content shadow-sm pt-2">
+        <div class="modal-header">
+          <div class="w-100 pt-2">
+            <h4 class="modal-title font-weight-5" id="ModalLabel">Şirketler İçin</h4>
+            <p class="font-size-11 mb-0">Demo Talep Et</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class=" px-sm-5 px-2">
+          <div class="modal-body py-1 px-sm-4">
+            <form action="#" class="text-light" id="company_contact">
+              <input type="text" name="fullName" id="fullName" class="form-control form-control-modul" placeholder="İsim soyisim*"
+                required="">
+              <input type="email" name="email" id="email" class="form-control form-control-modul " placeholder="E-Posta*" required="">
+              <input type="text" name="phone" id="phone" class="form-control form-control-modul" placeholder="Telefon">
+              <input type="text" name="companyName" id="company" class="form-control form-control-modul " placeholder="Şirket İsmi">
+              <input type="text" name="sector" id="sector" class="form-control form-control-modul" placeholder="Sektör">
+              <input type="text" name="position" id="position" class="form-control form-control-modul" placeholder="Pozisyon">
+              <input type="text" name="explanation" id="explanation" class="form-control form-control-modul " placeholder="Açıklama">
+              <label class="mt-2 privacy-text">
+                <input type="checkbox" name="" id="explanation" required="">
+                <a href="#" target="_blank">
+                  Kullanıcı Sözleşmesini</a>,
+                <a href="#" target="_blank">
+                  Kişisel Veri İşleme Politikasını
+                </a>
+                <a href="#">
+                  ve Gizlilik Politikasını kabul ediyorum.
+                </a>
+              </label>
+              <div>
+                <div class="my-3">
+                  <button class="btn btn-danger fz-13 shadow-lg my-4 px-4" type="submit" name="submit"><span
+                      class="px-3">Talep Gönder</span></button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

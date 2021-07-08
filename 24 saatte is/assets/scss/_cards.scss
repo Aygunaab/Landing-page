@@ -1,0 +1,141 @@
+//blog card style
+.blog-card-style-one {
+	position: relative;
+	width: 100%;
+	z-index: 0;
+	overflow: hidden;
+
+	&.card-smal {
+		position: relative;
+		width: 100%;
+		z-index: 0;
+		overflow: hidden;
+		display: block;
+		&::before {
+			content: '';
+			display: block;
+			padding-top: 43%;
+			z-index: 0;
+		}
+		@media only screen and(max-width: 992px) {
+			&::before {
+				content: '';
+				display: block;
+				padding-top: 100%;
+				z-index: 0;
+			}
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+		z-index: 0;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+		z-index: 2;
+	}
+	.card-details {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 3;
+		display: block;
+		padding: 16px 24px;
+		color: $white-color;
+		.data {
+			font-size: 13px;
+		}
+		.blog-card-title {
+			font-weight: 500;
+			font-size: 18px;
+			margin: 0;
+		}
+	}
+}
+//post card
+.post-card {
+	display: flex;
+    @media only screen and(max-width: 992px) {
+        display: block;
+    }
+
+	&:not(:last-of-type) {
+		padding-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
+		border-bottom: 2px solid #d8e0ea;
+	}
+
+	.post-card-img-block {
+		overflow: hidden;
+		flex-basis: 268px;
+		flex-shrink: 0;
+		flex-grow: 0;
+		max-height: 160px;
+        @media only screen and(max-width: 992px){
+            max-height: 300px;
+        }
+	}
+	.post-card-content-block {
+		margin-left: 20px;
+        @media only screen and(max-width: 992px){
+            margin-top: 20px;
+        }
+		.post-card-data {
+			font-size: 13px;
+			color: $title-color;
+		}
+		.post-card-subtitle {
+			color: #86939e;
+		}
+	}
+}
+
+.category-card {
+	.widget {
+		background-color: #f6f6f6;
+	}
+	.widget-title {
+		margin: 0;
+		padding: 16px 24px;
+		font-size: 20px;
+		color: $title-color;
+		img {
+			margin-right: 10px;
+		}
+	}
+	.sidebar-menu {
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+		padding-right: 24px;
+		padding-left: 24px;
+		.sidebar-menu-link {
+			display: flex;
+			padding-top: 16px;
+			padding-bottom: 16px;
+			color: #435064;
+		}
+		.sidebar-menu-count {
+			margin-left: auto;
+			padding: 2px;
+			background-color: #86939e;
+			color: #fff;
+			border-radius: 3px;
+			font-size: 12px;
+			min-width: 50px;
+			text-align: center;
+		}
+	}
+}
