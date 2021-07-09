@@ -653,33 +653,12 @@ footer {
 		margin-top: 50px;
 	}
 }
-.login-img {
-	position: absolute;
-	top: -80px;
-	right: 215px;
-	@media (min-width: 992px) {
-		@media (max-width: 575px) {
-			top: -80px;
-	right: 170px;
-		}
-	}
-	
-	@media (max-width: 768px) {
-		@media (max-width: 575px) {
-			top: -40px;
-			right: 130px;
-			
-			img {
-				height: 100px;
-			}
-		}
-	}
-	@media (max-width: 575px) {
-		top: -40px;
-		right: 170px;
-		
-		img {
-			height: 70px;
+.login-img{
+	margin-top: -100px;
+	img{
+		@media (max-width: 575px){
+			height: 100px;
+			width: 100px !important;
 		}
 	}
 }
@@ -695,4 +674,13 @@ footer {
  &:hover{
 	 color: $secondary-color;
  }
+}
+.about{
+	color:$title-color
+}
+.color-red{
+	color: $secondary-color !important;
+}
+.text-underline{
+	text-decoration: underline !important;
 }

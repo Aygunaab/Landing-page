@@ -261,6 +261,12 @@
   border-radius: 20px;
 }
 
+@media only screen and (max-width: 778px) {
+  .jobsearch-details-card-lists {
+    text-align: center;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -1053,35 +1059,13 @@ a {
 }
 
 .login-img {
-  position: absolute;
-  top: -80px;
-  right: 215px;
-}
-
-@media (min-width: 992px) and (max-width: 575px) {
-  .login-img {
-    top: -80px;
-    right: 170px;
-  }
-}
-
-@media (max-width: 768px) and (max-width: 575px) {
-  .login-img {
-    top: -40px;
-    right: 130px;
-  }
-  .login-img img {
-    height: 100px;
-  }
+  margin-top: -100px;
 }
 
 @media (max-width: 575px) {
-  .login-img {
-    top: -40px;
-    right: 170px;
-  }
   .login-img img {
-    height: 70px;
+    height: 100px;
+    width: 100px !important;
   }
 }
 
@@ -1096,6 +1080,18 @@ a {
 
 .hover-red:hover {
   color: #cc1000;
+}
+
+.about {
+  color: #333;
+}
+
+.color-red {
+  color: #cc1000 !important;
+}
+
+.text-underline {
+  text-decoration: underline !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
